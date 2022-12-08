@@ -1,9 +1,20 @@
 #include "lists.h"
+<<<<<<< HEAD
 /**
  * dlistint_len - returns the number of elements in a dlistint_t list
  * @h: head of doubly linked list
  * Return: number of nodes
  */
+=======
+
+/**
+ * dlistint_len - returns the number of elements in a dlistint_t list
+ * @h: head of doubly linked list
+ *
+ * Return: number of nodes
+ */
+
+>>>>>>> 5d196eea347fdb9db3b913e0face58b0ca3dc68c
 size_t dlistint_len(const dlistint_t *h)
 {
 	int count = 0;
@@ -15,10 +26,16 @@ size_t dlistint_len(const dlistint_t *h)
 	}
 	return (count);
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5d196eea347fdb9db3b913e0face58b0ca3dc68c
 /**
  * delete_dnodeint_at_index -  deletes the node at index of a linked list
  * @head: head of linked list
  * @index: index of node to delete
+<<<<<<< HEAD
  * Return: 1 if success, 0 if failure
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -31,6 +48,21 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (head == NULL || *head == NULL)
 		return (-1);
+=======
+ *
+ * Return: 1 if success, 0 if failure
+ */
+
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	dlistint_t *temp;
+	size_t length;
+	unsigned int i = 0;
+
+	if (head == NULL || *head == NULL)
+		return (-1);
+
+>>>>>>> 5d196eea347fdb9db3b913e0face58b0ca3dc68c
 	length = dlistint_len(*head);
 	if (index >= length)
 		return (-1);
